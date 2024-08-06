@@ -9,10 +9,7 @@ This project focuses on optimizing a large language model using various techniqu
 - [Project Overview](#project-overview)
 - [Datasets](#datasets)
 - [Features](#features)
-- [Performance Enhancements](#performance-enhancements)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Project Overview
@@ -32,15 +29,7 @@ This project implements several techniques to optimize a large language model (L
 - **Gradient Accumulation:** Utilized to handle large batch sizes on limited hardware.
 - **Fused AdamW Optimizer:** Configured for faster convergence on CUDA devices.
 - **Distributed Data Parallel (DDP):** Implemented for multi-GPU training, ensuring scalability and faster training times.
-
-## Performance Enhancements
-- **Efficient Attention Mechanism:** Uses F.scaled_dot_product_attention to optimize memory usage during training.
-- **Stable Parameter Initialization:** Incorporates NANOGPT_SCALE_INIT for initializing parameters.
-- **Weight Sharing:** Reduces model size by sharing weights between embedding and output layers.
-- **Gradient Accumulation:** Allows for training with large batch sizes even on hardware with limited memory.
-- **Fused AdamW Optimizer:** Enhances training speed on CUDA-enabled devices.
-- **Distributed Data Parallel (DDP):** Ensures effective multi-GPU training, reducing training time significantly.
-
+  
 ## Results
 The training process and model evaluation results indicate the effectiveness of the applied optimizations:
 
